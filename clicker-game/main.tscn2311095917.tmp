@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://byf4gdu3nitc3"]
+
+[ext_resource type="Script" uid="uid://b4yu5t4kpv2wr" path="res://ui.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://ctjg6w1heitbu" path="res://player.gd" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://cduudcn4706ln" path="res://equipment.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://rp5phj4uyox7" path="res://weapon.gd" id="3_1bvp3"]
+
+[node name="Main" type="Node" unique_id=1155244427]
+
+[node name="UI" type="Control" parent="." unique_id=978555314]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 687.0
+offset_bottom = 252.0
+script = ExtResource("1_ig7tw")
+
+[node name="Player" type="Node" parent="." unique_id=424031511]
+script = ExtResource("2_1bvp3")
+
+[node name="Equipment" type="Node" parent="." unique_id=364567579]
+script = ExtResource("2_h2yge")
+
+[node name="Weapon" type="Node" parent="Equipment" unique_id=219543557]
+script = ExtResource("3_1bvp3")
