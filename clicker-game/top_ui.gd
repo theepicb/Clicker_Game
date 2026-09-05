@@ -5,7 +5,9 @@ extends Control
 func _ready() -> void:
 	position = Vector2(0, 0)
 	size = Vector2(get_viewport_rect().size.x, get_viewport_rect().size.y * $"..".SCREEN_RATIO)
-	var button = Button.new()
-	button.size = size
-	add_child(button)
 	pass 
+
+func _gui_input(event: InputEvent):
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			print("Mouse down!")

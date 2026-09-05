@@ -19,3 +19,13 @@ func _getStats () -> Dictionary:
 
 func _returnName() -> String:
 	return itemName
+
+static func createCopperSword (level: int, quality: int):
+	var dict = {
+		"Dam": randi_range(1, level + 1+ (quality * 2)),
+		"Str": randi_range(1, level + 1+ (quality * 2)),
+		"CC": randf_range(1, 2+quality *  min(1, floor(level / 4))) if  quality > 1 else 0
+	}
+
+
+	return Weapon.new(dict, "Copper ShortSword")

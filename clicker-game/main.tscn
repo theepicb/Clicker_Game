@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://cduudcn4706ln" path="res://equipment.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://rp5phj4uyox7" path="res://weapon.gd" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://b4w4qbhhlmk0b" path="res://bottom_ui.gd" id="3_272bh"]
+[ext_resource type="Script" uid="uid://brj1wcku5hpes" path="res://enemy.gd" id="7_5vw27"]
+[ext_resource type="Script" uid="uid://gvo4jc8uuhav" path="res://enums.gd" id="8_kek77"]
 
 [node name="Main" type="Node" unique_id=1155244427]
 
@@ -15,7 +17,6 @@ anchors_preset = 0
 offset_right = 1127.0
 offset_bottom = 372.0
 script = ExtResource("1_ig7tw")
-SCREEN_RATIO = 0.044
 
 [node name="Top_UI" type="Control" parent="UI" unique_id=137783869]
 anchors_preset = 0
@@ -37,3 +38,9 @@ script = ExtResource("2_h2yge")
 
 [node name="Weapon" type="Node" parent="Equipment" unique_id=219543557]
 script = ExtResource("3_1bvp3")
+
+[node name="Enemy" type="Node" parent="." unique_id=651974914]
+script = ExtResource("7_5vw27")
+
+[node name="Enums" type="Node" parent="." unique_id=25431770]
+script = ExtResource("8_kek77")
