@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://b4w4qbhhlmk0b" path="res://bottom_ui.gd" id="3_272bh"]
 [ext_resource type="Script" uid="uid://brj1wcku5hpes" path="res://enemy.gd" id="7_5vw27"]
 [ext_resource type="Script" uid="uid://gvo4jc8uuhav" path="res://enums.gd" id="8_kek77"]
+[ext_resource type="Script" uid="uid://twxgmta76n82" path="res://zones.gd" id="9_kek77"]
+[ext_resource type="Script" uid="uid://dp5w8n5hvk8tr" path="res://common.gd" id="10_4c57u"]
 
 [node name="Main" type="Node" unique_id=1155244427]
 
@@ -44,3 +46,9 @@ script = ExtResource("7_5vw27")
 
 [node name="Enums" type="Node" parent="." unique_id=25431770]
 script = ExtResource("8_kek77")
+
+[node name="Zones" type="Node" parent="." unique_id=1177592422]
+script = ExtResource("9_kek77")
+
+[node name="Common" type="Node" parent="." unique_id=2058931930]
+script = ExtResource("10_4c57u")

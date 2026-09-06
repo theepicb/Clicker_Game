@@ -3,5 +3,14 @@ extends Node
 
 enum enemy {
 	goblin,
-	cobold
+	kobold
+}
+
+enum weaponRarity {
+	common,
+	uncommon,
+	rare,
+	legendary,
+	mythic,
+	unique
 }
